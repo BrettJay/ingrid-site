@@ -3,8 +3,10 @@
 .billboard {
   display: grid;
   height: 100vh;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .image img {
   width: 100%;

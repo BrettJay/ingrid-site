@@ -43,7 +43,7 @@ export const query = graphql`
   query {
     file(relativePath: { eq: "screenshot.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 914) {
           # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
           ...GatsbyImageSharpFluid_noBase64
         }
