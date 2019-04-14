@@ -1,0 +1,61 @@
+@import "../styles/_tools.respond_to.sass";
+
+.billboard {
+  display: grid;
+  height: 100vh;
+}
+
+
+.image img {
+  width: 100%;
+}
+
+.image .gatsby-image-wrapper {
+  box-shadow: 0 3px 14px #D7005A;
+}
+
+@include respond-to(small-down) {
+  .billboard {
+    padding: 45px 15px 15px;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+  .caption {
+    text-align: center;
+  }
+  .callstoaction {
+    margin: 10px 0 20px;
+  }
+  .image {
+    align-self: end;
+    padding-bottom: 15px;
+  }
+}
+
+.imageWrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(215, 0, 90, 0.527), 0 2px 14px rgba(215, 0, 90, 0.219);
+}
+@include respond-to(ipad-up) {
+  .billboard {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 30px;
+  }
+  .image {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 1;
+    align-self: center;
+  }
+  .caption {
+    grid-column-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+  }
+  .callstoaction {
+    margin: 40px 0 20px;
+  }
+}

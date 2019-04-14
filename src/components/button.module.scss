@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid #666;
+  padding: 10px;
+  & + .button {
+    margin-left: 10px;
+  }
+}
+
+.primary {
+  composes: button;
+  border-color: #F5A623;
+  background: #F5A623;
+  color: #fff;
+}
+
+.secondary {
+  composes: button;
+}
