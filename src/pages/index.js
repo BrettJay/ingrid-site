@@ -7,7 +7,7 @@ import ButtonStyles from "../components/button.module.scss"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Opengraph from "../images/Opengraph.png"
+import Opengraph from "../images/opengraph.png"
 import Logo from "../images/logo.svg"
 
 export default ({ data }) => (
