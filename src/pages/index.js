@@ -7,6 +7,7 @@ import ButtonStyles from "../components/button.module.scss"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import Opengraph from "../images/Opengraph.png"
 import Logo from "../images/logo.svg"
 
 export default ({ data }) => (
@@ -14,7 +15,7 @@ export default ({ data }) => (
     <Metatags
       title={data.site.siteMetadata.title}
       description={data.site.siteMetadata.description}
-      thumbnail=""
+      thumbnail={Opengraph}
       url={data.site.siteMetadata.siteURL}
       pathname=""
     />
