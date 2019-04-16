@@ -2,11 +2,19 @@
   display: inline-block;
   color: #666;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 2px solid #666;
   padding: 10px;
+  transition: transform 0.15s ease;
   & + .button {
     margin-left: 10px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.95);
+    transform: 0 100%;
   }
 }
 
